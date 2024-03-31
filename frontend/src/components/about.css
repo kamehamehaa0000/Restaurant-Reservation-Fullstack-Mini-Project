@@ -1,0 +1,180 @@
+.container-optional {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+      50% 50% at 100% 0,
+      #da4438 0% 5%,
+      #ffffff 6% 15%,
+      #da4438 16% 25%,
+      #ffffff 26% 35%,
+      #da4438 36% 45%,
+      #ffffff 46% 55%,
+      #da4438 56% 65%,
+      #ffffff 66% 75%,
+      #da4438 76% 85%,
+      #ffffff 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+      50% 50% at 0 100%,
+      #da4438 0% 5%,
+      #ffffff 6% 15%,
+      #da4438 16% 25%,
+      #ffffff 26% 35%,
+      #da4438 36% 45%,
+      #ffffff 46% 55%,
+      #da4438 56% 65%,
+      #ffffff 66% 75%,
+      #da4438 76% 85%,
+      #ffffff 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+      50% 50%,
+      #da4438 0% 5%,
+      #ffffff 6% 15%,
+      #da4438 16% 25%,
+      #ffffff 26% 35%,
+      #da4438 36% 45%,
+      #ffffff 46% 55%,
+      #da4438 56% 65%,
+      #ffffff 66% 75%,
+      #da4438 76% 85%,
+      #ffffff 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+        50% 50%,
+        #da4438 0% 5%,
+        #ffffff 6% 15%,
+        #da4438 16% 25%,
+        #ffffff 26% 35%,
+        #da4438 36% 45%,
+        #ffffff 46% 55%,
+        #da4438 56% 65%,
+        #ffffff 66% 75%,
+        #da4438 76% 85%,
+        #ffffff 86% 95%,
+        #0000 96%
+      )
+      38px 38px;
+  background-size: 76px 76px;
+  background-color: #da4438;
+}
+.about-main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.about-bg-image {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: url(/illus3.jpg);
+  filter: blur(3px);
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center;
+}
+.about-container {
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #323285 30px
+    ),
+    repeating-linear-gradient(#e75c5c8a, #c73d3d);
+  background-color: rgb(184, 21, 21);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+}
+
+.about-left {
+  padding: 2rem 2rem;
+  padding-top: 5rem;
+  width: 30%;
+  height: 100%;
+}
+.about-left img {
+  width: 300px;
+  margin: 4rem;
+}
+.about-left h1 {
+  font-size: 2rem;
+  color: rgb(204, 195, 195);
+  text-transform: capitalize;
+  padding: 0 1rem;
+}
+.about-right {
+  padding: 2rem 2rem;
+  padding-top: 5rem;
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.about-right h1 {
+  font-size: 2.8rem;
+  color: rgb(204, 195, 195);
+  text-align: right;
+  text-transform: capitalize;
+  padding: 0 1rem;
+}
+.about-right img {
+  width: 80px;
+  position: absolute;
+  right: 100px;
+}
+.about-center {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+
+  padding-top: 10%;
+  height: 100%;
+}
+.animation-container {
+  filter: drop-shadow(1px 1px 1px red);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+.about-text-span {
+  position: relative;
+  max-width: 100%;
+  margin: 10px;
+  height: 95px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+.about-text-span h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.about-text-span h2:last-child {
+  top: 100%;
+  color: 3d327f;
+}
+
+.about-text-span:hover h2:first-child {
+  top: -300px;
+}
+
+.about-text-span:hover h2:last-child {
+  top: 0;
+}
